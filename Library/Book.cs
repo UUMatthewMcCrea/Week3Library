@@ -19,26 +19,12 @@ namespace Library
             ISBN = bookISBN;
         }
 
-        void DisplayInfo()
+        public void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
             Console.WriteLine($"Book ISBN: {ISBN}");
             Console.WriteLine();
-        }
-
-        static void Main(string[] args)
-        {
-            Book mybook = new Book("C# for beginners", "BillGates", "1234");
-            
-
-            Book yourbook = new Book("C#Methods", "Microsoft", "3456778");
-            
-
-            mybook.DisplayInfo();
-            yourbook.DisplayInfo();
-
-           
         }
     }
 }
